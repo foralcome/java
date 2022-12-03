@@ -25,6 +25,7 @@ class Solution88 {
         merge(nums1, m, nums2, n);
         print(nums1);
     }
+
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
         int indexEnd1 = m + n - 1;
         int indexEnd2 = n - 1;
@@ -49,7 +50,7 @@ class Solution88 {
         }
     }
 
-    public static void print(int[] arr){
+    public static void print(int[] arr) {
         for (int a : arr) {
             System.out.println(a);
         }
