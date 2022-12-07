@@ -16,18 +16,18 @@ public class lesson3_hometask1 {
 
         //String expression = "1?+2?=3?";
         //String expression = "1?+2?=36";
-        String expression = "36=1?+2?";
-        //System.out.print("Введите уравнение: ");
-        //String expression = in.nextLine();
-        //while (!checkInputException(expression)) {
-        //    System.out.print("Введите уравнение: ");
-        //    expression = in.nextLine();
-        //}
+        //String expression = "36=1?+2?";
+
+        System.out.print("Введите уравнение: ");
+        String expression = in.nextLine();
+        while (!checkInputException(expression)) {
+            System.out.print("Введите уравнение: ");
+            expression = in.nextLine();
+        }
         System.out.println("Уравнение: " + expression);
+        in.close();
 
         findSolutionException(expression);
-
-        in.close();
     }
 
     private static boolean checkInputException(String expression) {
